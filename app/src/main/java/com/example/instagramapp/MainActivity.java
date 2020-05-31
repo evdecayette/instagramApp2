@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.example.instagramapp.fragments.ComposeFragment;
 import com.example.instagramapp.fragments.PostsFragment;
+import com.example.instagramapp.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.action_profile:
                     default:
                         Toast.makeText(MainActivity.this, "Profile!", Toast.LENGTH_SHORT).show();
-                        fragment = new ComposeFragment();
+                        fragment = new ProfileFragment();
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer,fragment).commit();
